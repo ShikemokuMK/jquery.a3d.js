@@ -1,0 +1,98 @@
+/*reset css */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td{
+    padding:0;
+    margin:0;
+}
+table{
+    border-collapse: collapse;
+    border-spacing:0;
+}
+fieldset,img{
+    border:0;
+}
+address,caption,cite,code,dfn,em,strong,th,var{
+    font-weight:normal;
+    font-style:normal;
+}
+ol,ul{
+    list-style:none;
+}
+caption,th{
+    text-align:left;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight:normal;
+    font-size:100%;
+}
+q:before,q:after{
+    content:'';
+}
+abbr,acronym{
+    border:0;
+}
+
+#main{
+    
+    position:relative;
+    overflow:hidden;
+    background-color:black;
+    width:640px;
+    height:480px;
+    
+    -webkit-perspective: 800px;
+}
+
+.anime-motion1 {
+  
+  -webkit-animation-name: 'motion1';
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+  
+  -moz--animation-name: 'motion1';
+  -moz-animation-duration: 4s;
+  -moz-animation-iteration-count: infinite;
+  
+  -o-animation-name: 'motion1';
+  -o-animation-duration: 4s;
+  -o-animation-iteration-count: infinite;
+  
+  -ms-animation-name: 'motion1';
+  -ms-animation-duration: 4s;
+  -ms-animation-iteration-count: infinite;
+  
+}
+
+@-webkit-keyframes 'motion1' {
+  0% { 
+    -webkit-transform: translate3d(0px,0px,0px) scale(0.5,0.5) rotate(0deg);
+  }
+  25% { 
+    -webkit-transform: translate3d(100px,-60px,0px) scale(1,1) rotate(45deg);
+  }
+  50% { 
+    -webkit-transform: translate3d(100px,20px,0px) scale(1.5,1.5) rotate(220deg);
+  }
+  75% { 
+    -webkit-transform: translate3d(0px,-60px,0px) scale(1,1) rotate(320deg);
+  }
+  100% { 
+    -webkit-transform: translate3d(0px,0px,0px) scale(0.5,0.5) rotate(0deg);
+  }
+
+}
+
+@-ms-keyframes 'motion1' {
+  0% { 
+    -ms-transform: left:400px;
+  }
+  25% { 
+    -ms-transform: top:-200px;
+  }
+  
+  100% { 
+    -ms-transform: top:400px;
+  }
+
+}
